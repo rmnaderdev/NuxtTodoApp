@@ -8,7 +8,8 @@
 
 // Define layout for this page
 definePageMeta({
-  layout: 'custom'
+  layout: 'custom',
+  middleware: 'auth2'
 });
 
 const { sayHello } = useUtils();
