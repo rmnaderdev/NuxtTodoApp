@@ -23,6 +23,10 @@ utils.sayHello();
 
 const { x, y } = useMouse();
 
+// Use myPlugin
+const { $sayHelloPlugin } = useNuxtApp();
+$sayHelloPlugin("Potato");
+
 </script>
 
 <style scoped>
