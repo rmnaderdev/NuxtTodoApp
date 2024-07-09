@@ -1,10 +1,8 @@
 <template>
-  <div v-if="randomNumber">
+  <div>
     Random Number: {{ randomNumber }}
   </div>
-  <div v-else>
-    Loading...
-  </div>
+  <button @click="getRandomNumber">Get new random number</button>
 </template>
 
 <script lang="ts" setup>
@@ -12,9 +10,13 @@ import { callOnce, useState } from 'nuxt/app';
 
 const randomNumber = useState<number | null>("randomNumber", () => null);
 
-await callOnce(async () => {
+const getRandomNumber = async () => {
   const res = await $fetch<{ number: number }>("/api/random-number");
   randomNumber.value = res.number;
+};
+
+await callOnce(async () => {
+  await getRandomNumber();
 });
 </script>
 

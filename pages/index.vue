@@ -13,7 +13,9 @@
   <div class="mb-4">
     <ProfileHeader />
     <Profile />
-    <RandomNumber />
+    <ClientOnly fallback-tag="span" fallback="Loading random number...">
+      <RandomNumber />
+    </ClientOnly>
   </div>
 
   <div class="px-4 py-2 text-slate-900 bg-gray-200 rounded shadow">
