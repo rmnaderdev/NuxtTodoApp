@@ -13,6 +13,7 @@
   <div class="mb-4">
     <ProfileHeader />
     <Profile />
+    <RandomNumber />
   </div>
 
   <div class="px-4 py-2 text-slate-900 bg-gray-200 rounded shadow">
