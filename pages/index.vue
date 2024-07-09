@@ -1,6 +1,6 @@
 <template>
   <Alert />
-  <div class="flex gap-x-4 items-center">
+  <div class="flex gap-x-4 items-center mb-4">
     <img class="w-16" src="~/assets/images/Bungus.gif" />
     <h1 class="text-3xl font-bold underline">
       Index Page
@@ -9,11 +9,17 @@
       Mouse position: {{ x }}, {{ y }}
     </p>
   </div>
-  
-  <div>
+
+  <div class="mb-4">
     <ProfileHeader />
     <Profile />
   </div>
+
+  <div class="px-4 py-2 text-slate-900 bg-gray-200 rounded shadow">
+    <ContentDoc />
+    <ContentDoc path="/my-other-doc" />
+  </div>
+
 </template>
 
 <script setup lang="ts">
@@ -29,6 +35,4 @@ $sayHelloPlugin("Potato");
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
