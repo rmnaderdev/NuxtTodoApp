@@ -5,6 +5,9 @@
     <h1 class="text-3xl font-bold underline">
       Index Page
     </h1>
+    <p>
+      Mouse position: {{ x }}, {{ y }}
+    </p>
   </div>
   
   <div>
@@ -14,6 +17,11 @@
 </template>
 
 <script setup lang="ts">
+
+const utils = useUtils();
+utils.sayHello();
+
+const { x, y } = useMouse();
 
 </script>
 
