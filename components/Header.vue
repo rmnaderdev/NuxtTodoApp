@@ -8,6 +8,9 @@
         <NuxtLink to="/state">State</NuxtLink>
       </li>
       <li>
+        <NuxtLink to="/people">People</NuxtLink>
+      </li>
+      <li>
         <NuxtLink to="/custom">Custom</NuxtLink>
       </li>
       <li>
